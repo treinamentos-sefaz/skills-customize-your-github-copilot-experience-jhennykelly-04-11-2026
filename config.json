@@ -72,6 +72,20 @@
           "type": "python"
         }
       ]
+    },
+    {
+      "id": "data-structures-contacts",
+      "title": "Data Structures: Contact Manager",
+      "description": "Working with lists and dictionaries by building a contact manager",
+      "path": "assignments/data-structures-contacts",
+      "dueDate": "2026-11-11",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        }
+      ]
     }
   ]
 }
