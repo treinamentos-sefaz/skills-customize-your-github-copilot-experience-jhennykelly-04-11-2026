@@ -1,19 +1,57 @@
 
-# 🎮 Desafio: Jogo da Forca
+# 📘 Atividade: Jogo da Forca
 
-Construa o clássico jogo de adivinhar palavras usando strings, loops e entrada de dados do usuário em Python.
+## 🎯 Objetivo
 
-## 🎯 O Que Você Vai Construir
+Construa o clássico jogo de adivinhar palavras em Python, praticando manipulação de strings, loops, condicionais e seleção aleatória.
 
-Crie um jogo da Forca onde os jogadores adivinham letras para revelar uma palavra oculta antes de esgotar as tentativas.
+## 📝 Tarefas
 
-**Habilidades praticadas:** Manipulação de strings, loops, condicionais, seleção aleatória
+### 🛠️ Seleção da Palavra e Estado Inicial
 
-## ✅ Requisitos Obrigatórios
+#### Descrição
+Escolha aleatoriamente uma palavra da lista predefinida e prepare as variáveis que controlam o estado do jogo.
 
-Seu jogo deve:
-- Selecionar palavras aleatoriamente de uma lista predefinida
-- Aceitar palpites de letras e mostrar o progresso atual (formato _ _ _)
-- Rastrear tentativas incorretas restantes
-- Encerrar quando a palavra for adivinhada ou as tentativas esgotarem
-- Exibir mensagens de vitória/derrota
+#### Requisitos
+O programa concluído deve:
+
+- Selecionar uma palavra aleatoriamente da lista `words` usando `random`.
+- Inicializar as letras já tentadas e o número de tentativas incorretas permitidas.
+
+### 🛠️ Loop Principal e Progresso
+
+#### Descrição
+Implemente o loop que recebe palpites de letras do jogador e exibe o progresso atual da palavra.
+
+#### Requisitos
+O programa concluído deve:
+
+- Aceitar um palpite de letra por vez via `input()`.
+- Mostrar o progresso atual no formato `_ _ _`, revelando as letras já acertadas.
+- Exemplo de saída para a palavra `python` após o palpite `p`:
+  ```
+  Progresso: p _ _ _ _ _
+  ```
+
+### 🛠️ Verificação de Palpites e Tentativas
+
+#### Descrição
+Atualize o estado do jogo a cada palpite e controle as tentativas incorretas restantes.
+
+#### Requisitos
+O programa concluído deve:
+
+- Registrar cada letra tentada, sem contar repetições como erro.
+- Descontar uma tentativa sempre que a letra não existir na palavra.
+- Encerrar o jogo quando todas as letras forem reveladas ou quando as tentativas se esgotarem.
+
+### 🛠️ Mensagens de Vitória e Derrota
+
+#### Descrição
+Ao final da partida, informe ao jogador se ele venceu ou perdeu.
+
+#### Requisitos
+O programa concluído deve:
+
+- Exibir uma mensagem de vitória quando a palavra for adivinhada.
+- Exibir uma mensagem de derrota, incluindo a palavra secreta, quando as tentativas se esgotarem.
